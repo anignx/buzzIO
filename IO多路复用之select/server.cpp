@@ -191,11 +191,13 @@ static void handle_client_proc(int srvfd)
             accept_client_proc(srvfd);
         } else {
             /*接受处理客户端消息*/
+            //不知道是哪个事件，还是需要全部遍历fd
             recv_client_msg(readfds);
         }
     }
 }
-
+//面试讲解
+//https://www.cnblogs.com/aspirant/p/9166944.html
 
 static void server_uninit()
 {
