@@ -19,9 +19,10 @@ int main(){
     //长度
     std::cout << res.size() << std::endl;
 
-    //尾部删除
+    //头部删除
     res.pop(); 
 
+    std::cout << "首：" << res.front() << ",尾" << res.back() << std::endl;
     //判断空
     res.empty();
 
